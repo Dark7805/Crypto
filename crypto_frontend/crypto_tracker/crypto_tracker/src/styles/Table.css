@@ -1,0 +1,148 @@
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  background-color: #1a1b1e;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.crypto-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  color: white;
+}
+
+.info-icon {
+  width: 16px;
+  height: 16px;
+  color: #a1a1aa;
+  opacity: 0.6;
+  margin-left: 4px;
+}
+
+.crypto-table th {
+  padding: 16px 24px;
+  text-align: right;
+  font-size: 12px;
+  font-weight: 500;
+  color: #a1a1aa;
+  white-space: nowrap;
+  border-bottom: 1px solid #2d2d33;
+  background-color: #1a1b1e;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.crypto-table th:first-child,
+.crypto-table td:first-child {
+  text-align: left;
+  padding-left: 24px;
+}
+
+.crypto-table td {
+  padding: 16px 24px;
+  text-align: right;
+  white-space: nowrap;
+  border-bottom: 1px solid #2d2d33;
+}
+
+.crypto-table tr:hover {
+  background-color: #2c2d30;
+  transition: background-color 0.2s ease;
+}
+
+.name-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.coin-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.coin-name {
+  color: white;
+  font-weight: 500;
+}
+
+.coin-symbol {
+  color: #a1a1aa;
+  font-size: 0.875rem;
+}
+
+.percentage-up {
+  color: #16c784;
+}
+
+.percentage-down {
+  color: #ea3943;
+}
+
+.percentage-neutral {
+  color: #a1a1aa;
+}
+
+.coin-logo {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Responsive styles */
+@media (max-width: 1280px) {
+  .crypto-table th,
+  .crypto-table td {
+    padding: 12px 16px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .crypto-table th,
+  .crypto-table td {
+    padding: 10px 12px;
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .table-container {
+    margin: 10px -16px;
+    border-radius: 0;
+  }
+  
+  .crypto-table th,
+  .crypto-table td {
+    padding: 8px;
+  }
+  
+  .coin-info {
+    gap: 4px;
+  }
+}
+
+/* Container styles */
+.app-container {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #1a1b1e;
+  padding: 20px;
+}
+
+.content-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.page-title {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  padding: 0 16px;
+} 
